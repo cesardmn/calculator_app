@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" light>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator App</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
     <!-- main -->
     <main>
       <!-- theme -->
       <div class="theme">
-        <span>calc</span>
-        <span>theme</span>
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
+        <h1 class="title">calc</h1>
+        <div class="theme-controls">
+          <span><button value="light" class="btn-theme">light</button></span>
+          <span><button value="dark" class="btn-theme">dark</button></span>
+          <span><button value="main" class="btn-theme">main</button></span>
+        </div>
       </div>
 
       <!-- display -->
@@ -24,41 +26,43 @@
       <!-- controls -->
       <div class="controls">
         <div class="row">
-          <span>7</span>
-          <span>8</span>
-          <span>9</span>
-          <span>del</span>
+          <span class="btn-single"><button>7</button></span>
+          <span class="btn-single"><button>8</button></span>
+          <span class="btn-single"><button>9</button></span>
+          <span class="btn-single"><button>del</button></span>
         </div>
 
         <div class="row">
-          <span>4</span>
-          <span>5</span>
-          <span>6</span>
-          <span>+</span>
+          <span class="btn-single"><button>4</button></span>
+          <span class="btn-single"><button>5</button></span>
+          <span class="btn-single"><button>6</button></span>
+          <span class="btn-single"><button>+</button></span>
         </div>
 
         <div class="row">
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>-</span>
+          <span class="btn-single"><button>1</button></span>
+          <span class="btn-single"><button>2</button></span>
+          <span class="btn-single"><button>3</button></span>
+          <span class="btn-single"><button>-</button></span>
         </div>
 
         <div class="row">
-          <span>.</span>
-          <span>0</span>
-          <span>/</span>
-          <span>x</span>
+          <span class="btn-single"><button>.</button></span>
+          <span class="btn-single"><button>0</button></span>
+          <span class="btn-single"><button>/</button></span>
+          <span class="btn-single"><button>x</button></span>
         </div>
 
         <div class="row">
-          <span>reset</span>
-          <span>=</span>
+          <span class="btn-double"><button>reset</button></span>
+          <span class="btn-double"><button>=</button></span>
         </div>
       </div>
     </main>
 
     <!-- footer -->
-    <footer></footer>
+    <footer>Cesar Dimi - 2023</footer>
+
+    <script src="./src/js/main.js" defer></script>
   </body>
 </html>
