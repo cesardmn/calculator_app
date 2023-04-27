@@ -6,8 +6,12 @@
 
 #### See the size of the elements adjust based on their device's screen size:
 
-- [x] Initial HTML.
-- [ ] Set mobile style.
+- [X] Initial HTML.
+- [X] Set mobile style.
+  - [X] style theme controls.
+  - [X] style display.
+  - [X] style controls.
+  - [X] style landscape orientation.
 - [ ] Set Desktop style.
 
 ### 2st rule:
