@@ -20,7 +20,7 @@
 #### Perform mathematical operations like addition, subtraction, multiplication, and division.
 
 - [ ] Create mathematical operations.
-  - [ } Get the values of the clicked buttons.
+  - [X] Get the values of the clicked buttons.
   - [ ] Identifies if the value is a number, operator, decimal point or another action.
   - [ ] Create the function related to the decimal point.
   - [ ] Create the temporary result.

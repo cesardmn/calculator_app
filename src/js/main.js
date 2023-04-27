@@ -2,6 +2,7 @@ const $html = document.querySelector('html')
 const $theme = document.querySelector('.theme')
 const $orientation = document.querySelector('.svg-hand')
 const $main = document.querySelector('main')
+const $contols = document.querySelector('.controls')
 
 $theme.addEventListener('click', (e) => {
   const themes = ['dark', 'light', 'main']
@@ -13,4 +14,8 @@ $theme.addEventListener('click', (e) => {
     }
     $html.setAttribute(themeChoiced, true)
   }
+})
+
+$contols.addEventListener('click', (e) => {
+  console.log(e.target.innerHTML)
 })
