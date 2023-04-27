@@ -4,24 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="calculator app" />
     <title>Calculator App</title>
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
     <!-- main -->
     <main>
-      <!-- theme -->
-      <div class="theme">
-        <h1 class="title">calc</h1>
-        <div class="theme-controls">
-          <span><button value="light" class="btn-theme">light</button></span>
-          <span><button value="dark" class="btn-theme">dark</button></span>
-          <span><button value="main" class="btn-theme">main</button></span>
-        </div>
-      </div>
+      <div class="top">
+        <!-- theme -->
+        <div class="theme">
+          <h1 class="title">calc</h1>
 
-      <!-- display -->
-      <div class="display">0</div>
+          <div class="theme-controls">
+            <button value="light">light</button>
+            <button value="dark">dark</button>
+            <button value="main">main</button>
+            <span class="svg-hand" id="orientation">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                height="1em"
+                width="1em"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 9l2.146 2.146-.707.708-3-3v-.708l3-3 .707.708L3 8h10l-2.146-2.146.707-.708 3 3v.708l-3 3-.707-.707L13 9H3z"
+                ></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- display -->
+        <div class="display">0</div>
+
+        <!-- landscape footer -->
+        <footer class="horizontal-footer">
+          <h1>calc -</h1>
+          &nbsp;
+          <span>Cesar Dimi - 2023</span>
+        </footer>
+      </div>
 
       <!-- controls -->
       <div class="controls">
@@ -61,7 +88,7 @@
     </main>
 
     <!-- footer -->
-    <footer>Cesar Dimi - 2023</footer>
+    <footer class="vertical-footer">Cesar Dimi - 2023</footer>
 
     <script src="./src/js/main.js" defer></script>
   </body>
