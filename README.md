@@ -6,12 +6,13 @@
 
 #### See the size of the elements adjust based on their device's screen size:
 
-- [X] HTML inicial.
-- [X] Style for mobile.
-  - [X] stylize controls.
-  - [X] stylize display.
-  - [X] stylize controls.
-  - [X] stylize landscape orientation.
+- [x] HTML inicial.
+- [x] Style for mobile.
+
+  - [x] stylize controls.
+  - [x] stylize display.
+  - [x] stylize controls.
+  - [x] stylize landscape orientation.
 
 - [ ] Set Desktop style.
 
@@ -20,17 +21,18 @@
 #### Perform mathematical operations like addition, subtraction, multiplication, and division.
 
 - [ ] Create mathematical operations.
-  - [X] Get the values of the clicked buttons.
-  - [ ] Identifies if the value is a number, operator, decimal point or another action.
+
+  - [x] Get the values of the clicked buttons.
+  - [x] Identifies if the value is a number, operator, decimal point or another action.
   - [ ] Create the function related to the decimal point.
-  - [ ] Create the temporary result.
 
 - [ ] Result mathematical operations interface.
+
 ### 3st rule:
 
 #### Adjust the color theme based on their preference.
 
-- [X] Create feature to change theme.
+- [x] Create feature to change theme.
 
 ### Bonus rule:
 
