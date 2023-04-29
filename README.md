@@ -21,7 +21,7 @@
 #### Perform mathematical operations like addition, subtraction, multiplication, and division.
 
 - [ ] Create a separate file for the calculator's logic.
-  - [ ] Identify which type of button was clicked.
+  - [x] Identify which type of button was clicked.
   - [ ] Create a function that inserts the clicked number.
   - [ ] Create a function that inserts the clicked operator.
   - [ ] Create the action functions
