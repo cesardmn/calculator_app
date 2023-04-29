@@ -25,7 +25,7 @@
   - [x] Create a function that inserts the clicked number.
   - [x] Create a function that inserts the clicked operator.
   - [ ] Create the action functions.
-    - [ ] Reset.
+    - [x] Reset.
     - [ ] Delete.
     - [ ] Add Separator.
     - [ ] Calculate.

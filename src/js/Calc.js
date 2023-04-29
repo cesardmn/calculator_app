@@ -32,9 +32,22 @@ export const Calc = ($display, clickTarget) => {
     return tempDisplay + clickTarget
   }
 
+  const setAction = () => {
+    const doReset = () => {
+      return '0'
+    }
+
+    const actions = {
+      reset: doReset,
+    }
+
+    return actions[clickTarget]()
+  }
+
   const click = {
     number: setNumber,
     operator: setOperator,
+    action: setAction,
   }
 
   return click[type]()
