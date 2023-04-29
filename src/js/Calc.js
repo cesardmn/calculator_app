@@ -14,5 +14,15 @@ export const Calc = ($display, clickTarget) => {
     return Object.keys(targetType)[0]
   })()
 
-  return type
+  const setNumber = () => {
+    return $display.innerText === '0'
+      ? clickTarget
+      : $display.innerText + clickTarget
+  }
+
+  const click = {
+    number: setNumber,
+  }
+
+  return click[type]()
 }

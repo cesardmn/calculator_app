@@ -22,7 +22,7 @@
 
 - [ ] Create a separate file for the calculator's logic.
   - [x] Identify which type of button was clicked.
-  - [ ] Create a function that inserts the clicked number.
+  - [x] Create a function that inserts the clicked number.
   - [ ] Create a function that inserts the clicked operator.
   - [ ] Create the action functions
     - [ ] Reset,
