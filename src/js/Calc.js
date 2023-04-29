@@ -37,8 +37,20 @@ export const Calc = ($display, clickTarget) => {
       return '0'
     }
 
+    const doDelete = () => {
+      const oldValue = $display.innerText
+      let newValue = oldValue.slice(0, -1)
+
+      if (newValue == '') {
+        newValue = '0'
+      }
+
+      return newValue
+    }
+
     const actions = {
       reset: doReset,
+      del: doDelete,
     }
 
     return actions[clickTarget]()

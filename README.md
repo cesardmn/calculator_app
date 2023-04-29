@@ -26,7 +26,7 @@
   - [x] Create a function that inserts the clicked operator.
   - [ ] Create the action functions.
     - [x] Reset.
-    - [ ] Delete.
+    - [x] Delete.
     - [ ] Add Separator.
     - [ ] Calculate.
 
