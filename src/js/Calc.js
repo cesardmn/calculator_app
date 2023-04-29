@@ -19,16 +19,19 @@ export const Calc = ($display, clickTarget) => {
       ? clickTarget
       : $display.innerText + clickTarget
   }
+
   const setOperator = () => {
     const lastDigit = $display.innerText.slice(-1)
     const operators = types[1].operator
+    let tempDisplay = $display.innerText
 
     if (operators.includes(lastDigit)) {
-      return $display.innerText.slice(0, -1)
+      tempDisplay = $display.innerText.slice(0, -1)
     }
 
-    return $display.innerText + clickTarget
+    return tempDisplay + clickTarget
   }
+
   const click = {
     number: setNumber,
     operator: setOperator,
