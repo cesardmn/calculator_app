@@ -23,12 +23,12 @@
 - [ ] Create a separate file for the calculator's logic.
   - [x] Identify which type of button was clicked.
   - [x] Create a function that inserts the clicked number.
-  - [ ] Create a function that inserts the clicked operator.
-  - [ ] Create the action functions
-    - [ ] Reset,
-    - [ ] Del,
-    - [ ] addSeparator,
-    - [ ] Calulate,
+  - [x] Create a function that inserts the clicked operator.
+  - [ ] Create the action functions.
+    - [ ] Reset.
+    - [ ] Delete.
+    - [ ] Add Separator.
+    - [ ] Calculate.
 
 ### 3st rule:
 
