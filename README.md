@@ -28,7 +28,7 @@
     - [x] Reset.
     - [x] Delete.
     - [x] Add Separator.
-    - [ ] Calculate.
+    - [x] Calculate.
 
 ### 3st rule:
 
