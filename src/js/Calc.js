@@ -48,9 +48,19 @@ export const Calc = ($display, clickTarget) => {
       return newValue
     }
 
+    const addSeparator = () => {
+      const lastNum = $display.innerText.match(/(\d+\.\d+|\d+)$/)[0]
+      if (lastNum.includes('.')) {
+        return $display.innerText
+      } else {
+        return $display.innerText + clickTarget
+      }
+    }
+
     const actions = {
       reset: doReset,
       del: doDelete,
+      '.': addSeparator,
     }
 
     return actions[clickTarget]()

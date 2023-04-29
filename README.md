@@ -27,7 +27,7 @@
   - [ ] Create the action functions.
     - [x] Reset.
     - [x] Delete.
-    - [ ] Add Separator.
+    - [x] Add Separator.
     - [ ] Calculate.
 
 ### 3st rule:
