@@ -20,13 +20,15 @@
 
 #### Perform mathematical operations like addition, subtraction, multiplication, and division.
 
-- [ ] Create mathematical operations.
-
-  - [x] Get the values of the clicked buttons.
-  - [x] Identifies if the value is a number, operator, decimal point or another action.
-  - [ ] Create the function related to the decimal point.
-
-- [ ] Result mathematical operations interface.
+- [ ] Create a separate file for the calculator's logic.
+  - [x] Identify which type of button was clicked.
+  - [x] Create a function that inserts the clicked number.
+  - [x] Create a function that inserts the clicked operator.
+  - [ ] Create the action functions.
+    - [x] Reset.
+    - [x] Delete.
+    - [x] Add Separator.
+    - [ ] Calculate.
 
 ### 3st rule:
 
