@@ -1,4 +1,16 @@
-export const Calc = ($display, clickTarget) => {
+export const Calc = ($display, input) => {
+  const clickTarget = (() => {
+    const replace = input
+      .replace('Backspace', 'del')
+      .replace('Delete', 'del')
+      .replace('Enter', '=')
+      .replace('Escape', 'reset')
+      .replace(',', '.')
+      .replace('*', 'x')
+
+    return replace
+  })()
+
   const types = [
     { action: ['del', 'reset', '=', '.'] },
     { operator: ['+', '-', 'x', '/'] },

@@ -28,6 +28,15 @@ const setTheme = (themeChoiced) => {
   }
 })()
 
+$html.addEventListener('keydown', (e) => {
+  try {
+    $display.innerText = Calc($display, e.key)
+  } catch (error) {
+    return
+  }
+  // console.log(e.key)
+})
+
 $theme.addEventListener('click', (e) => {
   const themes = ['dark', 'light', 'main']
   const themeChoiced = e.target.value

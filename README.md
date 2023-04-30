@@ -41,5 +41,5 @@
 #### Have their initial theme preference checked using prefers-color-scheme and have any additional changes saved in the browser.
 
 - [x] Save theme in localstorage.
-- [ ] Keyboard listener.
+- [x] Keyboard listener.
 - [ ] Change hand orientation on lanscape screen.
