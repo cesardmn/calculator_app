@@ -34,13 +34,12 @@ $html.addEventListener('keydown', (e) => {
   } catch (error) {
     return
   }
-  // console.log(e.key)
 })
 
 $theme.addEventListener('click', (e) => {
   const themes = ['dark', 'light', 'main']
   const themeChoiced = e.target.value
-  setTheme(themeChoiced)
+  themes.includes(themeChoiced) && setTheme(themeChoiced)
 })
 
 $contols.addEventListener('click', (e) => {

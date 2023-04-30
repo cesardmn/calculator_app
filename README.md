@@ -42,4 +42,3 @@
 
 - [x] Save theme in localstorage.
 - [x] Keyboard listener.
-- [ ] Change hand orientation on lanscape screen.
