@@ -40,5 +40,5 @@
 
 #### Have their initial theme preference checked using prefers-color-scheme and have any additional changes saved in the browser.
 
-- [ ] Save theme in localstorage.
-- [ ] Change hand orientatio on lanscape screen.
+- [x] Save theme in localstorage.
+- [ ] Change hand orientation on lanscape screen.
