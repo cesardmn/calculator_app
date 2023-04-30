@@ -20,11 +20,11 @@
 
 #### Perform mathematical operations like addition, subtraction, multiplication, and division.
 
-- [ ] Create a separate file for the calculator's logic.
+- [x] Create a separate file for the calculator's logic.
   - [x] Identify which type of button was clicked.
   - [x] Create a function that inserts the clicked number.
   - [x] Create a function that inserts the clicked operator.
-  - [ ] Create the action functions.
+  - [x] Create the action functions.
     - [x] Reset.
     - [x] Delete.
     - [x] Add Separator.
