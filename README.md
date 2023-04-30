@@ -14,7 +14,7 @@
   - [x] stylize controls.
   - [x] stylize landscape orientation.
 
-- [ ] Set Desktop style.
+- [x] Set Desktop style.
 
 ### 2st rule:
 
@@ -41,4 +41,5 @@
 #### Have their initial theme preference checked using prefers-color-scheme and have any additional changes saved in the browser.
 
 - [x] Save theme in localstorage.
+- [x] Keyboard listener.
 - [ ] Change hand orientation on lanscape screen.
