@@ -57,10 +57,17 @@ export const Calc = ($display, clickTarget) => {
       }
     }
 
+    const calculate = () => {
+      const equation = $display.innerText.replace('x', '*')
+      const result = new Function(`return ${equation}`)()
+      return result
+    }
+
     const actions = {
       reset: doReset,
       del: doDelete,
       '.': addSeparator,
+      '=': calculate,
     }
 
     return actions[clickTarget]()

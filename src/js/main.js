@@ -7,16 +7,31 @@ const $display = document.querySelector('.display')
 
 import { Calc } from './Calc.js'
 
+const setTheme = (themeChoiced) => {
+  const themes = ['dark', 'light', 'main']
+
+  for (const theme of themes) {
+    $html.removeAttribute(theme)
+  }
+  $html.setAttribute(themeChoiced, true)
+
+  localStorage.setItem('themeChoiced', themeChoiced)
+}
+
+;(() => {
+  const local = localStorage.getItem('themeChoiced')
+
+  if (local) {
+    setTheme(local)
+  } else {
+    setTheme('main')
+  }
+})()
+
 $theme.addEventListener('click', (e) => {
   const themes = ['dark', 'light', 'main']
   const themeChoiced = e.target.value
-
-  if (themeChoiced) {
-    for (const theme of themes) {
-      $html.removeAttribute(theme)
-    }
-    $html.setAttribute(themeChoiced, true)
-  }
+  setTheme(themeChoiced)
 })
 
 $contols.addEventListener('click', (e) => {
