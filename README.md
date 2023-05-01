@@ -1,7 +1,9 @@
-# Calculator App <br> [>> deploy <<<]('https://cesardmn.github.io/calculator_app/')
+# Calculator App 
 
 <p>Functional calculator built with HTML CSS and vanilla JavaScript.</p>
 <p>Responsive layout and a choice of three different themes.</p>
+
+## [>> deploy <<<]('https://cesardmn.github.io/calculator_app/')
 
 <br>
 
