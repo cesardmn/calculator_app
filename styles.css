@@ -140,21 +140,6 @@ main {
   scale: 1.2;
 }
 
-.svg-hand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  color: var(--color4);
-  font-weight: bold;
-  font-size: var(--lg1);
-  cursor: pointer;
-  border: 1px solid var(--color4);
-  border-radius: var(--sm2);
-  display: none;
-}
-
 .display {
   height: 50%;
   background-color: var(--color3);
@@ -254,10 +239,6 @@ main {
   .theme .title {
     display: none;
   }
-
-  /* .svg-hand {
-    display: flex;
-  } */
 
   .display {
     width: 100%;

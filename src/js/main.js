@@ -18,6 +18,7 @@ const setTheme = (themeChoiced) => {
   localStorage.setItem('themeChoiced', themeChoiced)
 }
 
+// set localstorage
 ;(() => {
   const local = localStorage.getItem('themeChoiced')
 
@@ -28,19 +29,27 @@ const setTheme = (themeChoiced) => {
   }
 })()
 
+// set copyright
+;(() => {
+  const date = new Date().getFullYear()
+  const copyright = document.querySelectorAll('.copyright')
+  for (const element of copyright) {
+    element.innerText = `Copyright © Cesar Dimi - ${date}`
+  }
+})()
+
 $html.addEventListener('keydown', (e) => {
   try {
     $display.innerText = Calc($display, e.key)
   } catch (error) {
     return
   }
-  // console.log(e.key)
 })
 
 $theme.addEventListener('click', (e) => {
   const themes = ['dark', 'light', 'main']
   const themeChoiced = e.target.value
-  setTheme(themeChoiced)
+  themes.includes(themeChoiced) && setTheme(themeChoiced)
 })
 
 $contols.addEventListener('click', (e) => {
