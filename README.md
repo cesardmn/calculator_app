@@ -1,4 +1,15 @@
-# calculator_app
+# Calculator App <br> [>> deploy <<<]('https://cesardmn.github.io/calculator_app/')
+
+<p>Functional calculator built with HTML CSS and vanilla JavaScript.</p>
+<p>Responsive layout and a choice of three different themes.</p>
+
+<br>
+
+## preview
+
+![landscape](./src/img/preview.gif)
+
+<br>
 
 ## rules and checklist of steps.
 
@@ -42,3 +53,7 @@
 
 - [x] Save theme in localstorage.
 - [x] Keyboard listener.
+
+<br><br>
+
+### inspired by [frontendmentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29)
