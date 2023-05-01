@@ -18,6 +18,7 @@ const setTheme = (themeChoiced) => {
   localStorage.setItem('themeChoiced', themeChoiced)
 }
 
+// set localstorage
 ;(() => {
   const local = localStorage.getItem('themeChoiced')
 
@@ -25,6 +26,15 @@ const setTheme = (themeChoiced) => {
     setTheme(local)
   } else {
     setTheme('main')
+  }
+})()
+
+// set copyright
+;(() => {
+  const date = new Date().getFullYear()
+  const copyright = document.querySelectorAll('.copyright')
+  for (const element of copyright) {
+    element.innerText = `Copyright © Cesar Dimi - ${date}`
   }
 })()
 
