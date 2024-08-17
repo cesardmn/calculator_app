@@ -1,98 +1,169 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="calculator app" />
+    <title>Calculadora Funcional - Cesar Dimi</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
     <link
-      rel="icon"
+      rel="shortcut icon"
+      href="./src/img/icons/favicon.ico"
       type="image/x-icon"
-      href="./src/img/favicon16.png"
-      sizes="16x16"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./src/img/favicon32.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./src/img/favicon96.png"
-      sizes="96x96"
     />
 
-    <title>Calculator App</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <!-- META -->
+    <meta
+      name="description"
+      content="Explore esta calculadora funcional desenvolvida com HTML, CSS e JavaScript, demonstrando boas práticas de desenvolvimento web."
+    />
+    <meta
+      name="keywords"
+      content="calculadora funcional, desenvolvimento web, HTML, CSS, JavaScript, boas práticas de programação, acessibilidade web."
+    />
+    <meta name="author" content="Cesar Dimi" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Calculadora Funcional - Demonstração de Desenvolvimento Web"
+    />
+    <meta
+      property="og:description"
+      content="Explore esta calculadora funcional desenvolvida com HTML, CSS e JavaScript, demonstrando boas práticas de desenvolvimento web."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://cesardmn.github.io/calculator_app/"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/cesardmn/calculator_app/main/src/img/preview.jpg"
+    />
+    <meta property="og:site_name" content="Cesar Dimi" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Calculadora Funcional - Demonstração de Desenvolvimento Web"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore esta calculadora funcional desenvolvida com HTML, CSS e JavaScript, demonstrando boas práticas de desenvolvimento web."
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/cesardmn/calculator_app/main/src/img/preview.jpg"
+    />
+    <link rel="canonical" href="https://cesardmn.github.io/calculator_app/" />
   </head>
+
   <body>
-    <!-- main -->
+    <header>
+      <h1>
+        <span>Calculadora</span>
+        <span class="logo-em">App</span>
+      </h1>
+      <a
+        href="https://cesardmn.github.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Perfil de Cesar Dimi"
+      >
+        <img
+          src="../../src/img/profile.jpg"
+          alt="Imagem de perfil de Cesar Dimi"
+          class="profile"
+        />
+      </a>
+    </header>
+
     <main>
-      <div class="top">
-        <!-- theme -->
-        <div class="theme">
-          <h1 class="title">calc</h1>
+      <section class="hero">
+        <h2 class="hero-title">Calculadora Funcional</h2>
+        <p class="hero-description">
+          Desenvolvido apenas com HTML, CSS e JavaScript, este projeto
+          exemplifica uma construção cuidadosa com boas práticas de
+          desenvolvimento.
+        </p>
 
-          <div class="theme-controls">
-            <button value="light">light</button>
-            <button value="dark">dark</button>
-            <button value="main">main</button>
-          </div>
+        <div class="cards">
+          <article class="card">
+            <h3 class="card-title">
+              HTML Semântico
+              <img src="./src/img/icons/html.svg" alt="Ícone HTML" />
+            </h3>
+            <p>
+              A página utiliza tags semânticas para uma estrutura de código mais
+              legível, com atenção aos atributos de acessibilidade e meta tags
+              para SEO.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">
+              CSS Responsivo
+              <img src="./src/img/icons/css.svg" alt="Ícone CSS" />
+            </h3>
+            <p>
+              A combinação de Flexbox e Grid permite que a página se adapte a
+              diferentes tamanhos de tela, com um design system para uma
+              visualização fluida.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">
+              JavaScript Moderno
+              <img
+                src="./src/img/icons/javascript.svg"
+                alt="Ícone JavaScript"
+              />
+            </h3>
+            <p>
+              O uso de padrões modernos e uma abordagem modular garantem
+              escalabilidade, fácil manutenção e uma experiência otimizada para
+              o usuário.
+            </p>
+          </article>
         </div>
+      </section>
 
-        <!-- display -->
-        <div class="display">0</div>
+      <section class="app">
+        <div class="calc controls" role="application" aria-label="Calculadora">
+          <div class="display" role="status" aria-live="polite">0</div>
 
-        <!-- landscape footer -->
-        <footer class="horizontal-footer">
-          <h1>calc -</h1>
-          &nbsp;
-          <span class="copyright">Cesar Dimi - 2023</span>
-        </footer>
-      </div>
+          <button class="btn action" aria-label="Limpar">c</button>
+          <button class="btn action" aria-label="Deletar">del</button>
+          <button class="btn operator" aria-label="Divisão">/</button>
+          <button class="btn operator" aria-label="Multiplicação">x</button>
 
-      <!-- controls -->
-      <div class="controls">
-        <div class="row">
-          <span class="btn-single btn-action"><button>7</button></span>
-          <span class="btn-single btn-action"><button>8</button></span>
-          <span class="btn-single btn-action"><button>9</button></span>
-          <span class="btn-single btn-action"><button>del</button></span>
+          <button class="btn number" aria-label="Número 7">7</button>
+          <button class="btn number" aria-label="Número 8">8</button>
+          <button class="btn number" aria-label="Número 9">9</button>
+          <button class="btn operator" aria-label="Subtração">-</button>
+
+          <button class="btn number" aria-label="Número 4">4</button>
+          <button class="btn number" aria-label="Número 5">5</button>
+          <button class="btn number" aria-label="Número 6">6</button>
+          <button class="btn operator" aria-label="Soma">+</button>
+
+          <button class="btn number" aria-label="Número 1">1</button>
+          <button class="btn number" aria-label="Número 2">2</button>
+          <button class="btn number" aria-label="Número 3">3</button>
+          <button class="btn action" aria-label="Resultado">=</button>
+
+          <button class="btn number" aria-label="Número 0">0</button>
+          <button class="btn operator" aria-label="Separador decimal">,</button>
         </div>
-
-        <div class="row">
-          <span class="btn-single btn-action"><button>4</button></span>
-          <span class="btn-single btn-action"><button>5</button></span>
-          <span class="btn-single btn-action"><button>6</button></span>
-          <span class="btn-single btn-action"><button>+</button></span>
-        </div>
-
-        <div class="row">
-          <span class="btn-single btn-action"><button>1</button></span>
-          <span class="btn-single btn-action"><button>2</button></span>
-          <span class="btn-single btn-action"><button>3</button></span>
-          <span class="btn-single btn-action"><button>-</button></span>
-        </div>
-
-        <div class="row">
-          <span class="btn-single btn-action"><button>.</button></span>
-          <span class="btn-single btn-action"><button>0</button></span>
-          <span class="btn-single btn-action"><button>/</button></span>
-          <span class="btn-single btn-action"><button>x</button></span>
-        </div>
-
-        <div class="row">
-          <span class="btn-double btn-action"><button>reset</button></span>
-          <span class="btn-double btn-action"><button>=</button></span>
-        </div>
-      </div>
+      </section>
     </main>
 
-    <!-- footer -->
-    <footer class="vertical-footer copyright"></footer>
+    <footer>
+      <div class="copyright">
+        &copy; 2024 Cesar Dimi. Todos os direitos reservados.
+      </div>
+    </footer>
 
-    <script src="./src/js/main.js" type="module" defer></script>
+    <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
