@@ -1,59 +1,62 @@
-# Calculator App <br> [>> deploy <<<]('https://cesardmn.github.io/calculator_app/')
+# Calculator App
 
-<p>Functional calculator built with HTML CSS and vanilla JavaScript.</p>
-<p>Responsive layout and a choice of three different themes.</p>
+## Descrição
 
-<br>
+Este projeto é uma calculadora funcional desenvolvida utilizando HTML, CSS e JavaScript. O objetivo é demonstrar boas práticas de desenvolvimento web, incluindo HTML semântico, design responsivo com CSS e programação modular com JavaScript.
 
-## preview
+## Estrutura do Projeto
 
-![landscape](./src/img/preview.gif)
+- **HTML**: Utiliza tags semânticas para melhorar a acessibilidade e a estrutura do código.
+- **CSS**: Emprega Flexbox e Grid para criar um design responsivo que se adapta a diferentes tamanhos de tela.
+- **JavaScript**: Adota padrões modernos e uma abordagem modular para garantir escalabilidade e fácil manutenção.
 
-<br>
+## Funcionalidades
 
-## rules and checklist of steps.
+- **Operações Matemáticas**: Suporte para adição, subtração, multiplicação e divisão.
+- **Manipulação de Entrada**: Permite a entrada de números, operadores e a utilização de funções como deletar, limpar e calcular resultados.
+- **Design Responsivo**: Adapta-se a diferentes tamanhos de tela, garantindo uma experiência de usuário fluida em dispositivos móveis e desktops.
+- **Acessibilidade**: Inclui atributos ARIA e suporte a navegação por teclado para melhorar a acessibilidade.
 
-### 1st rule:
+## Tecnologias Utilizadas
 
-#### See the size of the elements adjust based on their device's screen size:
+- **HTML**: Estrutura semântica da página.
+- **CSS**: Estilização e design responsivo.
+- **JavaScript**: Lógica da calculadora e manipulação de eventos.
 
-- [x] HTML inicial.
-- [x] Style for mobile.
+## Instruções de Uso
 
-  - [x] stylize controls.
-  - [x] stylize display.
-  - [x] stylize controls.
-  - [x] stylize landscape orientation.
+1. **Clone o Repositório**
 
-- [x] Set Desktop style.
+   ```bash
+   git clone https://github.com/cesardmn/calculator_app.git
+   ```
 
-### 2st rule:
+2. **Navegue para o Diretório do Projeto**
 
-#### Perform mathematical operations like addition, subtraction, multiplication, and division.
+   ```bash
+   cd calculator_app
+   ```
 
-- [x] Create a separate file for the calculator's logic.
-  - [x] Identify which type of button was clicked.
-  - [x] Create a function that inserts the clicked number.
-  - [x] Create a function that inserts the clicked operator.
-  - [x] Create the action functions.
-    - [x] Reset.
-    - [x] Delete.
-    - [x] Add Separator.
-    - [x] Calculate.
+3. **Abra o Arquivo `index.html` no Navegador**
 
-### 3st rule:
+   Abra o arquivo `index.html` em um navegador web para visualizar e usar a calculadora.
 
-#### Adjust the color theme based on their preference.
+## Recursos e Metadados
 
-- [x] Create feature to change theme.
+- **Descrição**: "Explore esta calculadora funcional desenvolvida com HTML, CSS e JavaScript, demonstrando boas práticas de desenvolvimento web."
+- **Palavras-chave**: calculadora funcional, desenvolvimento web, HTML, CSS, JavaScript, boas práticas de programação, acessibilidade web.
+- **Autor**: Cesar Dimi
+- **URL**: [https://cesardmn.github.io/calculator_app/](https://cesardmn.github.io/calculator_app/)
+- **Imagem de Visualização**: ![Preview](./src/img/preview.jpg)
 
-### Bonus rule:
+## Contribuições
 
-#### Have their initial theme preference checked using prefers-color-scheme and have any additional changes saved in the browser.
+Se você deseja contribuir para o projeto, sinta-se à vontade para abrir uma _issue_ ou enviar um _pull request_ com melhorias ou correções. Certifique-se de seguir as boas práticas e manter a consistência com o estilo do código existente.
 
-- [x] Save theme in localstorage.
-- [x] Keyboard listener.
+## Licença
 
-<br><br>
+Este projeto é de propriedade de Cesar Dimi e está licenciado sob a [Licença MIT](LICENSE).
 
-### inspired by [frontendmentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29)
+## Contato
+
+Para mais informações, você pode entrar em contato através do [perfil de Cesar Dimi](https://cesardmn.github.io/).
